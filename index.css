@@ -1,0 +1,79 @@
+body
+        {
+            background-color: black;
+        }
+        .analog
+        {
+            width: 300px;
+            height: 300px;
+            position: absolute;
+            left: 39.1%;
+            top: 39.1%;
+        }
+
+       .sec
+        {
+            height: 225px;
+            position: absolute;
+            left: 41.7%;
+            top: 44.5%;
+            
+        }
+
+        .hours
+        {
+            height: 250px;
+            
+            position: absolute;
+            top: 42%;
+            right: 40.9%;
+            transform: rotate(0deg);
+            transform-origin: bottom;
+        } 
+
+        .mint
+        {
+            height: 230px;
+            
+            position: absolute;
+            top: 44.8%;
+            right: 41.6%;
+        }
+
+        .circle
+        {
+            width: 299px;
+            height: 298px;
+            border-radius: 50%;
+            border:  solid 3px;
+            position: absolute;
+            background-image: linear-gradient(red,purple,green,blue);
+            left: 38.9%;
+            top: 38.7%;
+            animation-name: colo;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            filter: blur(14px);
+        }
+
+        @keyframes colo
+        {
+            0%{transfomr:rotate(0deg)}
+            25%{transform:rotate(72deg)}
+            50%{transform:rotate(216deg)}
+            75%{transform:rotate(288deg)}
+            100%{transform:rotate(360deg)}
+            
+        }
+
+        .circle2
+        {
+            width: 299px;
+            height: 298px;
+            border-radius: 50%;
+            border:  solid 3px;
+            position: absolute;
+            background-color:#FABB42;
+            left: 38.9%;
+            top: 38.7%;
+        }
